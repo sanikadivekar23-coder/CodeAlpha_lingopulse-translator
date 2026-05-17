@@ -1,0 +1,8 @@
+{
+  "name": "LingoPulse Translator",
+  "description": "An interactive language translation web application powered by Google Gemini AI, offering translation, auto-detection, tone modulation, copy features, history log, and text-to-speech support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
