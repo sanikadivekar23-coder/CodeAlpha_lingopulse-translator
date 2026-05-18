@@ -17,6 +17,8 @@ Build System & Tooling: Vite v6 managing optimized dependency loading and build 
 AI Core Layer: Google Gen AI Native SDK executing neural machine translation workflows via the gemini-2.5-flash model.
 Styling Framework: Tailwind CSS v4 alongside Lucide React icons, creating responsive layouts and dark/light color themes.
 Animation Platform: Motion Framework (Framer Motion v12) powering ambient background transitions and micro-interactions.
+
+
 📂 Deep-Dive File & Codebase Explanation
 1. Integration Service Layer (src/services/gemini.ts)
 This module encapsulates the connection logic with the Google Gen AI network parameters:
