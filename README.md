@@ -11,6 +11,8 @@ Linguistic Variable Preparation: The application reads selected language configu
 API Execution and Token Control: The text payload is dispatched asynchronously to the cloud service framework. The module initializes the native Google Gen AI framework by reading backend secret variables at runtime. It compiles the context variables into a structured prompt targeting the gemini-2.5-flash model. Strict system rules instruct the model to return raw text without wrapping lines in quotes, providing conversation, or adding side notes, ensuring clean translation data.
 State Synchronization and Cache Injection: Upon a successful model execution, the system saves the clean text string into the component's output view state. It concurrently structures a unified database transaction entry containing a unique ID timestamp string, source content, translated text, and language codes. This object is passed to a root completion callback, appending it directly onto the top of the global tracking array.
 Local Caching and Device Updates: The system timeline registers the modified array through a custom state synchronization hook, which writes a stringified JSON array into the browser's persistent localStorage cache. This pattern ensures user query history is preserved across browser sessions.
+
+
 🛠️ Technical Stack Summary
 Front-End Architecture: React 19 (TypeScript) using modern functional patterns and custom lifecycle hooks.
 Build System & Tooling: Vite v6 managing optimized dependency loading and build bundling.
